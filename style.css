@@ -1,0 +1,151 @@
+body{
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: whitesmoke;
+}
+p{
+    margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+.weather-container{
+    display: grid;
+    grid-template-columns: 1fr 400px;    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+  
+    
+}
+.degree{
+    font-weight: 600;
+    font-size: 60px;
+}
+.headline{
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 15px;
+    padding-top: 15px;
+     
+}
+.weather-headline{
+    position: absolute;
+}
+.feel-degree,
+.place,
+.date-and-time
+{
+   font-size: 25px;
+}
+.text1{
+    line-height: 1.5;
+}
+.col-1{  
+     
+     position: relative;
+}
+.weather-condition{
+    position: absolute;
+    bottom: 150px;
+    color: white;
+    padding-left: 15px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.col-2{
+    /* background-color:lightpink; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#line{
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 1px;
+    background-color: rgb(195, 195, 195);
+    border: none;
+    
+}
+.form{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.form-inp{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-width: 1px;
+    border-color: rgb(195, 195, 195);
+    outline: none !important;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 17px;
+}
+.form-inp::placeholder{
+   padding-left: 10px;
+   font-weight: 500;
+   
+}
+.btn-col{
+    padding-left:10px ;
+}
+.form-btn
+
+{
+    width: 50px;
+    text-align: center;
+    padding-top: 3px;
+    margin-left: 5px;
+    background-color: rgb(172, 172, 172);
+    border: none;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.current-location{
+    width: 50px;
+    text-align: center;
+    padding-top: 3px;
+    margin-left: 5px;
+    background-color: rgb(172, 172, 172);
+    border: none;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.country-details{
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.text{
+    line-height: 2;
+}
+.p{
+    font-size: 16px;
+   font-weight: 600;
+}
